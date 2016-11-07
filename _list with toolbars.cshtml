@@ -1,0 +1,12 @@
+
+<h1>List Example</h1>
+<p>Simple, standard example of using a toolbar on list-items and list-header.</p>
+
+<h2>@ListContent.Title @Edit.Toolbar(ListContent)</h2>
+
+@foreach(var cont in AsDynamic(Data["Default"])){
+    <div class="sc-element">
+        @cont.EntityTitle
+        @Edit.Toolbar(cont)
+    </div>
+}
